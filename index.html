@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <title>Hospital</title>
+</head>
+
+<body>
+    <div class="container">
+        <button class="navbar-icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAAOElEQVRIie3TsQkAMAwDwSf7b+XBnCqQ1hC7yR+oFioEkhoEkM2JU7YGBt1yuE+/807SM95JUskGsVVPTkFzAfwAAAAASUVORK5CYII=" /></button>
+        <div class="sidebar">
+            <div class="hospital-logo">
+                <a href="#">
+                    <img src="file/image/logo.png" alt="hospital-logo">
+                </a>
+            </div>
+            <nav>
+                <div class="dahsbord-navbar">
+                    <h4>Dashbord</h4>
+                    <div class="dropdown-btns">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABKUlEQVRIie2RsUrDUBSG/5OELgUXh84OvkBuIF3jFMHFVZ18AZEOfQR3Z0Fw1kUoIkjnhJw7BOni4ubmkiUSEo+LAVNakyY6td94+M//3cMF1gpmHjHzaJUdahISEdJaXwAYf48ulVLnRPTZWTCbzXppml4DOKosEt0lSXLied5Ha0Ecx/0sy26JyF8SmeZ5fjgcDpOVBUEQDCzLmgBQvz0CwLNhGL5t22+NBWEY7pim+Qhgt6a85LUoCt913ZdagdZaicgEwKBheck7ER0opYKfQ2OufE9Epi3KAWBbRJ6iKNpfKNBaH4vIA4CtFuUlfSK6j6LotCJg5jMRuQHQ61BeYhHRFTOPgQV/wMzSpd1xnEqnsSz4V1hNg/Mva3rpv1+wEayBYEMtXysxZ7x1/D2EAAAAAElFTkSuQmCC">
+                        <sup><button class="dashbord-btn">Dahsbord</button></sup>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAYklEQVRIie3TsQmAUAxF0aPirFaK4ASOYOcsDuUE8rWxsFOQCMK/9ePdEBIyma9o0aOIKK+xYccUJWmRoiXNRTL/WtJdJMNduIyY4A2hKwotDz3TV49WPcgkrFgwnqJM5kMOgqse+CJxiGwAAAAASUVORK5CYII=" />
+                    </div>
+                    <ul class="dashbord-ul">
+                        <li><a href="#"></a>Dashbord 1</li>
+                        <li><a href="#"></a>Dashbord 2</li>
+                    </ul>
+                </div>
+                <div class="application-navbar">
+                    <h4>Aplication</h4>
+                    <div class="dropdown-btns">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNi4zMzQiIGhlaWdodD0iMTYuMzM0IiB2aWV3Qm94PSIwIDAgMTYuMzM0IDE2LjMzNCI+DQogIDxwYXRoIGlkPSJicm93c2VyIiBkPSJNMTIuNTA2LDE2LjMzNEgzLjgyOEEzLjgzMywzLjgzMywwLDAsMSwwLDEyLjUwNlYzLjgyOEEzLjgzMywzLjgzMywwLDAsMSwzLjgyOCwwaDguNjc3YTMuODMzLDMuODMzLDAsMCwxLDMuODI4LDMuODI4djguNjc3QTMuODMzLDMuODMzLDAsMCwxLDEyLjUwNiwxNi4zMzRaTTMuODI4LDEuMjc2QTIuNTU1LDIuNTU1LDAsMCwwLDEuMjc2LDMuODI4djguNjc3YTIuNTU1LDIuNTU1LDAsMCwwLDIuNTUyLDIuNTUyaDguNjc3YTIuNTU1LDIuNTU1LDAsMCwwLDIuNTUyLTIuNTUyVjMuODI4YTIuNTU1LDIuNTU1LDAsMCwwLTIuNTUyLTIuNTUyWm05Ljk1NCwyLjgzOWEuNjM4LjYzOCwwLDAsMC0uNjM4LS42MzhIMy4xOWEuNjM4LjYzOCwwLDEsMCwwLDEuMjc2aDkuOTU0QS42MzguNjM4LDAsMCwwLDEzLjc4Miw0LjExNVptLjAzMiw1Ljk2NmEuNjM4LjYzOCwwLDAsMC0uNjM4LS42MzhIOS40NDNhLjYzOC42MzgsMCwwLDAsMCwxLjI3NmgzLjczM0EuNjM4LjYzOCwwLDAsMCwxMy44MTQsMTAuMDgxWm0wLTIuNTUyYS42MzguNjM4LDAsMCwwLS42MzgtLjYzOEg2LjAzYS42MzguNjM4LDAsMSwwLDAsMS4yNzZoNy4xNDZBLjYzOC42MzgsMCwwLDAsMTMuODE0LDcuNTI5Wk03LjU2MSwxMC4wODFhLjYzOC42MzgsMCwwLDAtLjYzOC0uNjM4SDMuMTlhLjYzOC42MzgsMCwxLDAsMCwxLjI3Nkg2LjkyM0EuNjM4LjYzOCwwLDAsMCw3LjU2MSwxMC4wODFabTAsMi41NTJBLjYzOC42MzgsMCwwLDAsNi45MjMsMTJIMy4xOWEuNjM4LjYzOCwwLDEsMCwwLDEuMjc2SDYuOTIzQS42MzguNjM4LDAsMCwwLDcuNTYxLDEyLjYzM1ptNC45NDUsMEEuNjM4LjYzOCwwLDAsMCwxMS44NjgsMTJIOS40NDNhLjYzOC42MzgsMCwwLDAsMCwxLjI3NmgyLjQyNUEuNjM4LjYzOCwwLDAsMCwxMi41MDYsMTIuNjMzWk0yLjU1Miw3LjQ2NWEuOC44LDAsMSwwLC44LS44QS44LjgsMCwwLDAsMi41NTIsNy40NjVaIiBmaWxsPSIjYTVhZGM2Ii8+DQo8L3N2Zz4NCg==">
+                        <button class="page-btn">Pages</button>
+                        <sub><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAYklEQVRIie3TsQmAUAxF0aPirFaK4ASOYOcsDuUE8rWxsFOQCMK/9ePdEBIyma9o0aOIKK+xYccUJWmRoiXNRTL/WtJdJMNduIyY4A2hKwotDz3TV49WPcgkrFgwnqJM5kMOgqse+CJxiGwAAAAASUVORK5CYII=" /></sub>
+                    </div>
+                    <ul class="pages-ul" style="display: none;">
+                        <li><a href="#"></a>Login</li>
+                        <li><a href="#"></a>Register</li>
+                        <li><a href="#"></a>Forgot Password</li>
+                    </ul>
+                    <div class="dropdown-btns">
+                        <img src="https://demo.dashboardpack.com/hospital-html/img/menu-icon/3.svg">
+                        <button class="application-btn">Applications</button>
+                        <sub><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAYklEQVRIie3TsQmAUAxF0aPirFaK4ASOYOcsDuUE8rWxsFOQCMK/9ePdEBIyma9o0aOIKK+xYccUJWmRoiXNRTL/WtJdJMNduIyY4A2hKwotDz3TV49WPcgkrFgwnqJM5kMOgqse+CJxiGwAAAAASUVORK5CYII=" /></sub>
+                    </div>
+                    <ul class="application-ul" style="display: none;">
+                        <li><a href="#"></a>Mail Box</li>
+                        <li><a href="#"></a>Chat</li>
+                        <li><a href="#"></a>FAQ</li>
+                    </ul>
+                </div>
+                <div class="components-navbar">
+                    <h4>Components</h4>
+                    <div class="dropdown-btns">
+                        <img src="https://demo.dashboardpack.com/hospital-html/img/menu-icon/4.svg">
+                        <button class="UiComponent-btn">UI component</button>
+                        <sub><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAYklEQVRIie3TsQmAUAxF0aPirFaK4ASOYOcsDuUE8rWxsFOQCMK/9ePdEBIyma9o0aOIKK+xYccUJWmRoiXNRTL/WtJdJMNduIyY4A2hKwotDz3TV49WPcgkrFgwnqJM5kMOgqse+CJxiGwAAAAASUVORK5CYII=" /></sub>
+                    </div>
+                    <ul class="uicomponent-ul" style="display: none;">
+                        <li><a href="#"></a>Elements</li>
+                        <li><a href="#"></a>Components</li>
+                    </ul>
+                    <div class="dropdown-btns">
+                        <img src="https://demo.dashboardpack.com/hospital-html/img/menu-icon/4.svg">
+                        <button class="widget-btn">Widgets</button>
+                        <sub><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAYklEQVRIie3TsQmAUAxF0aPirFaK4ASOYOcsDuUE8rWxsFOQCMK/9ePdEBIyma9o0aOIKK+xYccUJWmRoiXNRTL/WtJdJMNduIyY4A2hKwotDz3TV49WPcgkrFgwnqJM5kMOgqse+CJxiGwAAAAASUVORK5CYII=" /></sub>
+                    </div>
+                    <ul class="widget-ul" style="display: none;">
+                        <li><a href="#"></a>Mail Box</li>
+                        <li><a href="#"></a>Chat</li>
+                        <li><a href="#"></a>FAQ</li>
+                    </ul>
+                    <div class="dropdown-btns">
+                        <img src="https://demo.dashboardpack.com/hospital-html/img/menu-icon/6.svg">
+                        <button class="form-btn">Forms</button>
+                        <sub><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAYklEQVRIie3TsQmAUAxF0aPirFaK4ASOYOcsDuUE8rWxsFOQCMK/9ePdEBIyma9o0aOIKK+xYccUJWmRoiXNRTL/WtJdJMNduIyY4A2hKwotDz3TV49WPcgkrFgwnqJM5kMOgqse+CJxiGwAAAAASUVORK5CYII=" /></sub>
+                    </div>
+                    <ul class="form-ul" style="display: none;">
+                        <li><a href="#"></a>Mail Box</li>
+                        <li><a href="#"></a>Chat</li>
+                        <li><a href="#"></a>FAQ</li>
+                    </ul>
+                    <div class="dropdown-btns">
+                        <img src="https://demo.dashboardpack.com/hospital-html/img/menu-icon/7.svg">
+                        <button class="chart-btn">Charts</button>
+                        <sub><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAYklEQVRIie3TsQmAUAxF0aPirFaK4ASOYOcsDuUE8rWxsFOQCMK/9ePdEBIyma9o0aOIKK+xYccUJWmRoiXNRTL/WtJdJMNduIyY4A2hKwotDz3TV49WPcgkrFgwnqJM5kMOgqse+CJxiGwAAAAASUVORK5CYII=" /></sub>
+                    </div>
+                    <ul class="chart-ul" style="display: none;">
+                        <li><a href="#"></a>Mail Box</li>
+                        <li><a href="#"></a>Chat</li>
+                        <li><a href="#"></a>FAQ</li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <main>
+            <nav>
+                <div class="search-box">
+                    <img src="https://demo.dashboardpack.com/hospital-html/img/icon/icon_search.svg" class="search-icon">
+                    <input type="text" placeholder="Search here..." />
+                </div>
+                <div class="notfication-icon">
+                    <img src="https://demo.dashboardpack.com/hospital-html/img/icon/bell.svg" class="bell-icon" />
+                    <img src="https://demo.dashboardpack.com/hospital-html/img/icon/msg.svg" class="msg-icon">
+                </div>
+                <div class="profile-img">
+                    <img src="https://demo.dashboardpack.com/hospital-html/img/client_img.png" class="client-img">
+                </div>
+            </nav>
+            <div class="hospital-info">
+                <div class="doctors-info">
+                    <img src="https://demo.dashboardpack.com/hospital-html/img/icon/man.svg" />
+                    <div class="text-info">
+                        <h1>520</h1>
+                        <p>Doctors</p>
+                    </div>
+                </div>
+                <div class="nurses-info">
+                    <img src="https://demo.dashboardpack.com/hospital-html/img/icon/cap.svg">
+                    <div class="text-info">
+                        <h1>6969</h1>
+                        <p>Nurses</p>
+                    </div>
+                </div>
+                <div class="patients-info">
+                    <img src="https://demo.dashboardpack.com/hospital-html/img/icon/wheel.svg">
+                    <div class="text-info">
+                        <h1>7509</h1>
+                        <p>Patients</p>
+                    </div>
+                </div>
+                <div class="pharmacusts-info">
+                    <img src="https://demo.dashboardpack.com/hospital-html/img/icon/pharma.svg">
+                    <div class="text-info">
+                        <h1>2110</h1>
+                        <p>Pharmacusts</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hospital-survey">
+                <h3>Hospital Survey</h3>
+                <hr>
+                <div class="salary">
+                    <div>
+                        <h1>$ 305</h1>
+                        <p>Today's Income</p>
+                    </div>
+                    <div>
+                        <h1>$ 1005</h1>
+                        <p>This Week's Income</p>
+                    </div>
+                    <div>
+                        <h1>$ 5505</h1>
+                        <p>This Month's Income</p>
+                    </div>
+                    <div>
+                        <h1>$ 155615</h1>
+                        <p>This Year's Income</p>
+                    </div>
+                </div>
+                <div class="info-chart">
+                    <img src="file/image/Screenshot 2021-04-14 173219.png" />
+                </div>
+            </div>
+            <div class="patient-main">
+                <section class="patient-table">
+                    <section class="patient-header">
+                        <h3>Patients</h3>
+                        <input type="text" placeholder="Search here..." />
+                        <button type="button" class="submit-icon">
+                            <img src="https://demo.dashboardpack.com/hospital-html/img/icon/icon_search.svg">
+                        </button>
+                    </section>
+                    <table>
+                        <tr class="header-table">
+                            <th colspan="2">Patients Name</th>
+                            <th>Departure</th>
+                            <th>Appointment Date</th>
+                            <th class="serial-theader">Serial Number</th>
+                            <th colspan="2" class="amount-theader">Amount</th>
+                        </tr>
+                        <tr>
+                            <td><img src="https://demo.dashboardpack.com/hospital-html/img/patient/pataint.png" /></td>
+                            <td>Jhon Kural</td>
+                            <td>Monte Carlo</td>
+                            <td>11/03/2020</td>
+                            <td class="serial-titem">MDC65454</td>
+                            <td class="amount-titem">$29,192</td>
+                            <td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAQklEQVRIiWNgGAVUBEcZGBj+Q/FhYjUxkmDBf3L0MpFgAVmAFAuOILGJDqJRQFUwmkwJgtFkOvBgNJkSBKPJlDYAAMoeEjdsTPIRAAAAAElFTkSuQmCC" /></td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://demo.dashboardpack.com/hospital-html/img/patient/pataint.png" /></td>
+                            <td>Jhon Kural</td>
+                            <td>Monte Carlo</td>
+                            <td>11/03/2020</td>
+                            <td class="serial-titem">MDC65454</td>
+                            <td class="amount-titem">$29,192</td>
+                            <td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAQklEQVRIiWNgGAVUBEcZGBj+Q/FhYjUxkmDBf3L0MpFgAVmAFAuOILGJDqJRQFUwmkwJgtFkOvBgNJkSBKPJlDYAAMoeEjdsTPIRAAAAAElFTkSuQmCC" /></td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://demo.dashboardpack.com/hospital-html/img/patient/pataint.png" /></td>
+                            <td>Jhon Kural</td>
+                            <td>Monte Carlo</td>
+                            <td>11/03/2020</td>
+                            <td class="serial-titem">MDC65454</td>
+                            <td class="amount-titem">$29,192</td>
+                            <td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAQklEQVRIiWNgGAVUBEcZGBj+Q/FhYjUxkmDBf3L0MpFgAVmAFAuOILGJDqJRQFUwmkwJgtFkOvBgNJkSBKPJlDYAAMoeEjdsTPIRAAAAAElFTkSuQmCC" /></td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://demo.dashboardpack.com/hospital-html/img/patient/pataint.png" /></td>
+                            <td>Jhon Kural</td>
+                            <td>Monte Carlo</td>
+                            <td>11/03/2020</td>
+                            <td class="serial-titem">MDC65454</td>
+                            <td class="amount-titem">$29,192</td>
+                            <td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAQklEQVRIiWNgGAVUBEcZGBj+Q/FhYjUxkmDBf3L0MpFgAVmAFAuOILGJDqJRQFUwmkwJgtFkOvBgNJkSBKPJlDYAAMoeEjdsTPIRAAAAAElFTkSuQmCC" /></td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://demo.dashboardpack.com/hospital-html/img/patient/pataint.png" /></td>
+                            <td>Jhon Kural</td>
+                            <td>Monte Carlo</td>
+                            <td>11/03/2020</td>
+                            <td class="serial-titem">MDC65454</td>
+                            <td style="width: 60px;" class="amount-titem">$29,192</td>
+                            <td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAQklEQVRIiWNgGAVUBEcZGBj+Q/FhYjUxkmDBf3L0MpFgAVmAFAuOILGJDqJRQFUwmkwJgtFkOvBgNJkSBKPJlDYAAMoeEjdsTPIRAAAAAElFTkSuQmCC" /></td>
+                        </tr>
+                    </table>
+                </section>
+                <section class="recover-chart">
+                    <img src="file/image/screen2.png" alt="recover chart">
+                </section>
+                <section class="death-chart">
+                    <img src="file/image/screen3.png" alt="death chart">
+                </section>
+            </div>
+            <div class="hospital-staff">
+                <div class="staff-header">
+                    <h3>Hospital Staff</h3>
+                    <div class="staff-buttons">
+                        <button class="back-btn"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAY0lEQVRIie2UMQqAMBAEJ2Lhs3yR+hTt/I4f89JEBBHiQa4QdiCkCMzkigSEeCGVFSbfgD0icskNOIExUj5J3kzeVc7tEWxOAlbuKWZFahH3Q+sdAQOWsg/A4bzgZ0I/O/FDMq2DH/ZtWe3XAAAAAElFTkSuQmCC" /></button>
+                        <button class="forward-btn"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAXElEQVRIiWNgGAWjAAoYoZhmhk9kYGCYQStLHBgYGP4xMDD8h1pEE0vSkSyhmU9GqCVMtHABJYCmQTR0DacoozEToeYhAwODIAMDw0UGBoZcqEVUBzQt7EbBEAcA9pke7TZh8K8AAAAASUVORK5CYII=" /></button>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="person-1">
+                        <img src="https://demo.dashboardpack.com/hospital-html/img/staf/3.png">
+                        <h4>Dr. Sysla J Smith</h4>
+                        <p>Doctor</p>
+                    </div>
+                    <div class="person-2">
+                        <img src="https://demo.dashboardpack.com/hospital-html/img/staf/3.png">
+                        <h4>Dr. Sysla J Smith</h4>
+                        <p>Doctor</p>
+                    </div>
+                    <div class="person-3">
+                        <img src="https://demo.dashboardpack.com/hospital-html/img/staf/3.png">
+                        <h4>Dr. Sysla J Smith</h4>
+                        <p>Doctor</p>
+                    </div>
+                    <div class="person-4">
+                        <img src="https://demo.dashboardpack.com/hospital-html/img/staf/3.png">
+                        <h4>Dr. Sysla J Smith</h4>
+                        <p>Doctor</p>
+                    </div>
+                    <div class="person-5">
+                        <img src="https://demo.dashboardpack.com/hospital-html/img/staf/3.png">
+                        <h4>Dr. Sysla J Smith</h4>
+                        <p>Doctor</p>
+                    </div>
+                </div>
+            </div>
+            <div class="activity-main">
+                <div class="recent-activity1">
+                    <h3>Recent Activity</h3>
+                    <ul>
+                        <li>5 min ago</li>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque</p>
+                        <li>5 min ago</li>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque</p>
+                        <li>5 min ago</li>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque</p>
+                        <li>5 min ago</li>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque</p>
+                    </ul>
+                </div>
+                <div class="recent-activity2">
+                    <img src="/file/image/screen1.png">
+                </div>
+            </div>
+            <footer>
+                <div class="copyright-content">
+                    <p>2020 © Influence - Designed by<i style="font-size: 20px; font-family: Arial, Helvetica, sans-serif;">&#9825;</i>Dashboard</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+</body>
+
+</html>

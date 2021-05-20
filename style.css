@@ -1,0 +1,657 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+html,
+body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  background: #eff1f7;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0 45% black;
+  background-color: #f5f7fd;
+}
+::-webkit-scrollbar-thumb {
+  background: radial-gradient(#c738d8, #eff1f7);
+}
+.sidebar {
+  height: 100%;
+  width: 280px;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.hospital-logo a img {
+  margin: 35px 30px 35px 10px;
+  padding: 30px 33px;
+}
+.sidebar nav {
+  display: block;
+}
+div[class$="navbar"]:not(.application-navbar) {
+  padding-left: 40px;
+  padding-top: 10px;
+  height: 200px;
+}
+div[class$="navbar"] h4 {
+  color: #2daab8;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+div[class$="navbar"] button:hover,
+.dashbord-ul li:active {
+  color: #17a2b8;
+}
+.application-navbar {
+  height: 140px;
+  padding-left: 40px;
+  padding-top: 10px;
+}
+.page-btn,
+.dashbord-btn,
+.application-btn,
+.UiComponent-btn,
+.widget-btn,
+.form-btn,
+.chart-btn {
+  font-size: 18px;
+  color: #818e94;
+  background-color: #fff;
+  cursor: pointer;
+}
+.dashbord-btn {
+  margin: 0px 50px 0px 18px;
+}
+.page-btn {
+  margin: 0px 85px 0px 18px;
+}
+.application-btn {
+  margin: 0px 39px 0px 18px;
+}
+.UiComponent-btn {
+  margin: 0px 24px 0px 18px;
+}
+.widget-btn {
+  margin: 0px 70px 0px 18px;
+}
+.form-btn {
+  margin: 0px 84px 0px 18px;
+}
+.chart-btn {
+  margin: 0px 84px 0px 18px;
+}
+[class$="btn"] {
+  margin-bottom: 20px;
+}
+[class$="ul"] {
+  list-style-type: none;
+  margin: 15px 0px 0px 43px;
+}
+[class$="ul"] li {
+  color: #818e94;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.dropdown-btns:hover + ul {
+  display: block;
+}
+.container {
+  display: flex;
+}
+main {
+  height: 100%;
+  background: #eff1f7;
+  display: grid;
+  padding-left: 280px;
+  width: 100%;
+  grid-template-rows: 120px 160px 600px 700px 470px 490px 100px;
+  grid-row-gap: 30px;
+}
+nav {
+  display: flex;
+  height: 130px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.navbar-icon {
+  display: none;
+}
+.search-box {
+  flex: 13;
+  position: relative;
+}
+.notfication-icon {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 40px;
+}
+.profile-img {
+  flex: 1;
+  margin: 0px 20px;
+}
+.bell-icon {
+  margin-right: 20px;
+}
+input {
+  width: 520px;
+  height: 58px;
+  padding-left: 70px;
+  border-radius: 50px;
+  margin-left: 30px;
+  background: #f5f7fd;
+}
+.search-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  padding: 20px 0px 0px 65px;
+}
+::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+.hospital-info {
+  display: flex;
+  font-weight: bold;
+  flex-direction: row;
+}
+.hospital-info div {
+  width: 22%;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: auto;
+}
+.hospital-info div div {
+  margin: auto;
+  height: 20px;
+  display: inline-block;
+  height: 30px;
+  width: 100px;
+}
+.doctors-info {
+  grid-area: "doctors-info";
+}
+.nurses-info {
+  grid-area: "nurses-info";
+}
+.patients-info {
+  grid-area: "patients-info";
+}
+.pharmacusts-info {
+  grid-area: "pharmacusts-info";
+}
+.hospital-info img {
+  margin: 40px 30px 0px 40px;
+}
+.hospital-info p {
+  color: #b2b5c0;
+}
+.hospital-survey {
+  background-color: #fff;
+  margin: auto;
+  width: 96.7%;
+  border-radius: 10px;
+}
+.salary {
+  display: flex;
+  justify-content: space-evenly;
+}
+.salary div {
+  display: inline-block;
+  margin-top: 25px;
+}
+.hospital-survey h1 {
+  text-align: center;
+}
+.salary p {
+  line-height: 6px;
+  color: #b2b5c0;
+}
+.hospital-survey h3 {
+  padding: 25px 0px 15px 25px;
+}
+.hospital-survey img {
+  width: 95%;
+  height: 390px;
+}
+.info-chart {
+  margin-top: 50px;
+}
+.patient-main {
+  background-color: #eff1f7;
+  border-radius: 10px;
+  width: 96.7%;
+  display: grid;
+  margin: auto;
+  row-gap: 13px;
+  column-gap: 20px;
+  grid-template-areas:
+    "patient-table patient-table  chart1"
+    "patient-table patient-table  chart1"
+    "patient-table patient-table  chart2"
+    "patient-table patient-table  chart2";
+}
+.patient-main img {
+  display: block;
+}
+.patient-header {
+  display: flex;
+  position: relative;
+  grid-area: header;
+  border-radius: 10px;
+}
+.patient-header h3 {
+  flex: 3;
+  padding: 35px 0px 15px 20px;
+}
+.patient-header input {
+  margin: 25px 25px 15px 25px;
+}
+.submit-icon {
+  position: absolute;
+  left: 23vw;
+  top: 5px;
+  height: 100%;
+  background: transparent;
+  font-size: 12px;
+  border: 0;
+  padding-left: 40px;
+  padding-right: 11px;
+}
+.patient-table {
+  background-color: #fff;
+  grid-area: patient-table;
+  margin: auto;
+  width: 100%;
+  border-radius: 10px;
+}
+table {
+  border-collapse: collapse;
+  margin: 0px 25px 0px 25px;
+  color: #212529;
+  width: 48.7vw;
+  height: 570px;
+}
+th {
+  background-color: #2daab8;
+  color: white;
+  margin: auto;
+  font-size: 13px;
+  height: 56px;
+}
+td,
+th {
+  text-align: left;
+}
+td {
+  height: 90px;
+  border-bottom: 1px solid gray;
+}
+th:first-child {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  padding-left: 20px;
+}
+th:last-child {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+td:first-child {
+  width: 2px;
+  padding: 0px 7px 0px 15px;
+}
+.recover-chart {
+  grid-area: chart1;
+}
+.death-chart {
+  grid-area: chart2;
+}
+.death-chart img,
+.recover-chart img {
+  width: 98%;
+  border-radius: 10px;
+  height: 320px;
+  margin: auto;
+}
+.hospital-staff {
+  background-color: #fff;
+  margin: auto;
+  width: 96.7%;
+  height: 480px;
+  border-radius: 10px;
+}
+.staff-header {
+  display: flex;
+}
+.hospital-staff h3 {
+  flex: 9;
+  padding: 27px 0px 15px 20px;
+}
+.staff-buttons {
+  padding: 27px 0px 0px 20px;
+  width: 100px;
+  margin-right: 20px;
+}
+.staff-buttons button {
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 10px;
+  padding-right: 6px;
+}
+.staff-buttons button:hover {
+  background-color: #2daab8;
+  color: #fff;
+}
+.person-carts {
+  height: 375px;
+  background-color: #fff;
+  display: flex;
+}
+.person1 {
+  background-color: #fff;
+  width: 30vw;
+  margin: 20px 8px 6px 10px;
+  height: 300px;
+  box-shadow: 2px 7px 15px 2px rgb(80 143 244 / 15%);
+  border-radius: 15px;
+}
+.person1 img {
+  margin: auto;
+  display: block;
+  padding-top: 50px;
+}
+.person1 h4 {
+  text-align: center;
+  padding: 20px 0px 5px 0px;
+}
+.person1 p {
+  text-align: center;
+  padding: 5px 0px 5px 0px;
+}
+.staff-header {
+  display: flex;
+}
+.hospital-staff h3 {
+  flex: 9;
+  padding: 27px 0px 15px 20px;
+}
+.staff-buttons {
+  padding: 27px 0px 0px 20px;
+  width: 120px;
+  margin: auto;
+}
+.staff-buttons button {
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 10px;
+  padding-right: 6px;
+}
+.staff-buttons button:hover {
+  background-color: #2daab8;
+  color: #fff;
+}
+.cards {
+  height: 320px;
+  background-color: #fff;
+  display: flex;
+}
+[class^="person"] {
+  background-color: #fff;
+  width: 30%;
+  margin: 20px 8px 6px 10px;
+  height: 320px;
+  box-shadow: 2px 7px 15px 2px rgb(80 143 244 / 15%);
+  border-radius: 15px;
+}
+[class^="person"] img {
+  margin: auto;
+  display: block;
+  padding-top: 50px;
+}
+[class^="person"] h4 {
+  text-align: center;
+  padding: 20px 0px 5px 0px;
+}
+[class^="person"] p {
+  text-align: center;
+  padding: 5px 0px 5px 0px;
+}
+.activity-main {
+  display: flex;
+  width: 96.7%;
+  margin: auto;
+  margin-top: 25px;
+}
+.recent-activity1 {
+  background-color: #fff;
+  width: 48.35%;
+  margin-right: 55px;
+  border-radius: 10px;
+}
+.recent-activity1 h3 {
+  padding: 22px 0px 19px 20px;
+}
+.recent-activity2 {
+  background-color: #fff;
+  width: 48.35%;
+  height: 322px;
+  border-radius: 10px;
+}
+.recent-activity2 img {
+  border-radius: 10px;
+  width: 95%;
+  height: 320px;
+}
+.recent-activity1 ul {
+  list-style-position: inside;
+  list-style-type: none;
+  margin-left: 24px;
+}
+.recent-activity1 ul li::before {
+  content: "\2022";
+  color: #2daab8;
+  font-size: 35px;
+  margin-right: 30px;
+}
+.recent-activity1 ul p {
+  margin: 0px 0px 5px 45px;
+  color: #b2b5c0;
+}
+footer {
+  margin: auto;
+  background-color: #fff;
+  width: 80%;
+  height: 80px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+footer p {
+  text-align: center;
+  padding: 30px 0px;
+  color: #818e94;
+}
+/* for hospital staff's cards and table theader(amount th elemnt)*/
+@media only screen and (max-width: 1603px) {
+  .person-5 {
+    display: none;
+  }
+  .amount-theader {
+    display: none;
+  }
+  td:last-child {
+    display: none;
+  }
+  .amount-titem {
+    display: none;
+  }
+  .activity-main {
+    margin-top: 10px;
+  }
+}
+/*for hospital staff and table thead (serial number th element)*/
+@media only screen and (max-width: 1509px) {
+  .hospital-info {
+    display: grid;
+    grid-template-areas:
+      "doctors-info nurses-info"
+      "patients-info pharmacusts-info";
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 51%);
+    gap: 10px 0px;
+  }
+  main {
+    grid-template-rows: 120px 300px 600px 700px 470px 490px 80px;
+  }
+  .hospital-info div {
+    width: 90%;
+    position: relative;
+  }
+  .hospital-info img {
+    margin: 40px 30px 0px 85px;
+  }
+  .text-info {
+    position: absolute;
+    top: 0px;
+    left: 1vw;
+  }
+  .serial-theader {
+    display: none;
+  }
+  .serial-titem {
+    display: none;
+  }
+}
+/*for aside and main width and recent acctivity and input width and patient main and table th and person-4*/
+@media only screen and (max-width: 1195px) {
+  .sidebar {
+    width: 23.5%;
+  }
+  main {
+    padding-left: 23.5%;
+    grid-template-rows: 120px 300px 600px 1400px 470px 820px 80px;
+  }
+  .activity-main {
+    flex-direction: column;
+  }
+  .activity-main div {
+    width: 100%;
+  }
+  .recent-activity2 {
+    margin-top: 20px;
+  }
+  input {
+    width: 320px;
+  }
+  .patient-main {
+    display: flex;
+    flex-direction: column;
+  }
+  .amount-theader {
+    display: inline-block;
+  }
+  td:last-child {
+    display: inline-block;
+  }
+  .amount-titem {
+    display: inline-block;
+  }
+  table {
+    margin: 5px;
+    width: 100%;
+  }
+  .person-4 {
+    display: none;
+  }
+}
+/*for aside display equals none, aside apears when focus and remove the margin-left of main and appear the navbar icon*/
+@media only screen and (max-width: 1083px) {
+  .sidebar {
+    position: fixed;
+    left: -100%;
+    width: 270px;
+  }
+  .navbar-icon {
+    display: inline-block;
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    background-color: #fff;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .navbar-icon:focus ~ .sidebar {
+    left: 0%;
+  }
+  main {
+    padding-left: 5px;
+  }
+  .search-icon {
+    position: absolute;
+    left: 40px;
+  }
+  input {
+    margin-left: 70px;
+  }
+}
+/*for cards child and remove the input and salary flex direction and orginizition of navbar icon */
+@media only screen and (max-width: 756px) {
+  input {
+    display: none;
+  }
+  .navbar-icon {
+    top: 47px;
+  }
+  .search-icon {
+    display: none;
+  }
+  .salary {
+    flex-direction: column;
+  }
+  .salary p {
+    padding-left: 266px;
+  }
+  main {
+    grid-template-rows: 120px 300px 860px 1350px 470px 790px 80px;
+  }
+  .person-3 {
+    display: none;
+  }
+  .person-1,
+  .person-2 {
+    width: 50%;
+  }
+}
+/*for hospital info*/
+@media only screen and (max-width: 676px) {
+  .hospital-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .hospital-info div {
+    width: 100%;
+    position: relative;
+  }
+  main {
+    grid-template-rows: 120px 500px 860px 1350px 470px 850px 80px;
+  }
+}

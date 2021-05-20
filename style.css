@@ -256,7 +256,6 @@ input {
 }
 .patient-header {
   display: flex;
-  position: relative;
   grid-area: header;
   border-radius: 10px;
 }
@@ -267,16 +266,17 @@ input {
 .patient-header input {
   margin: 25px 25px 15px 25px;
 }
+.tsearch-box {
+  position: relative;
+}
 .submit-icon {
   position: absolute;
-  left: 23vw;
+  left: 11%;
   top: 5px;
   height: 100%;
   background: transparent;
   font-size: 12px;
   border: 0;
-  padding-left: 40px;
-  padding-right: 11px;
 }
 .patient-table {
   background-color: #fff;
@@ -618,6 +618,9 @@ footer p {
   input {
     display: none;
   }
+  .tsearch-input {
+    display: inline-block;
+  }
   .navbar-icon {
     top: 47px;
   }
@@ -653,5 +656,11 @@ footer p {
   }
   main {
     grid-template-rows: 120px 500px 860px 1350px 470px 850px 80px;
+  }
+}
+/*for table search icon =*/
+@media only screen and (max-width: 1162px) {
+  .submit-icon {
+    left: 15%;
   }
 }
